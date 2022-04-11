@@ -155,6 +155,25 @@ body {
     text-decoration: line-through;
 }
 
+.inputA {
+    height: 15px;
+    width: 150px;
+    transition: height 0.5s, width 0.5s;
+}
+.inputA:hover {
+    height: 20px;
+    width: 190px;
+}
+.textAni {
+    height: 100px;
+    width: 220px;
+    transition: height 0.5s, width 0.5s;
+}
+.textAni:hover {
+    height: 150px;
+    width: 250px;
+}
+
 @media screen and (min-width:1024px) {
     
     .grilla {
@@ -206,6 +225,12 @@ body {
         margin: 20px;
         position: relative;
         border: solid 2px rgb(223, 186, 66) ;
+        transition: all 0.5s;
+    }
+    
+    .card1:hover {
+        height: 550px;
+        width: 350px;
     }
     
     .card1 img {
@@ -214,6 +239,11 @@ body {
         margin: 0 auto;
         padding: 20px 20px;
         border: solid 2px grey;
+        transition: all 0.5s;
+    }
+    .card1 img:hover {
+        width: 200px;
+
     }
     
     .flexCard {
@@ -298,4 +328,10 @@ body {
 .menu li:hover .subMenu {
     display: block;
 }
+
+.menu li:hover {
+    background-color:rgb(14, 39, 48) ;
+    border-radius: 5px;
+}
+
 }
