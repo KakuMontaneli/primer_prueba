@@ -7,8 +7,8 @@
     "imag"
     "publi"
     "footer";
-}
 
+}
 
 header {
     grid-area: header;
@@ -33,62 +33,15 @@ nav {
 .publi {
     grid-area: publi;
 }
-
-.flechaImg {
-    width: 50px;
-}
-.flecha li {
-    display: block;
-}
-.flecha li:hover .menu {
-    display: none;
+.navColor {
+    background-color: rgb(14, 64, 83);
+    color: rgb(223, 186, 66);
+    border: solid 2px rgb(223, 186, 66) ;
 }
 
-.flecha .menu {
-    display: none;
-    position: absolute;
+.navColor li {
+    border-bottom: solid 2px rgb(223, 186, 66) ;
 }
-.flecha:hover > .menu {
-    display: block;
-}
-.menu{
-    list-style: none;
-    font-size:0;
-    text-align: right;
-    
-}
-
-.menu li {
-    border-left:solid 2px rgb(223, 186, 66) ;
-    background-color:rgb(14, 64, 83) ;
-    text-align: center; 
-    display: inline-block;
-    position:relative;
-    width: 100%;
-    font-size: 25px;
-}
-.subMenu {
-    position: absolute;
-    display: none;
-    
-}
-.subMenu li {
-    background-color:rgb(30, 63, 75) ;
-    border-left:none;
-    border-radius: 5px;
-    border-top:solid 2px rgb(223, 186, 66) ;
-    display: block;
-    width:100%;
-    padding: 10px;
-    text-align: left;
-}
-.menu li:hover .subMenu {
-    display: block;
-}
-
-
-
-
 a {
 color:rgb(223, 186, 66);
 }
@@ -111,6 +64,7 @@ body {
     width: auto;
     height: auto;
     padding: 10px;
+
 }
 .margen {
     margin: 2%;
@@ -179,11 +133,9 @@ body {
     .grilla {
         display: grid;
         grid-template-areas:
-        "header nav nav"
+        "titulo nav nav"
         "grilla_2 grilla_2 grilla_2";
-        grid-template-rows: 2fr 7fr  2fr;
-        grid-template-columns: 40% auto 20%;
-        
+
     }
     
     .grilla_2 {
@@ -192,21 +144,33 @@ body {
         grid-template-areas: 
         "texto imag publi";
     }
-    
-    header {
-        grid-area: header;
-        margin-bottom: 5%;
-        padding: 10px;
+
+    .titulo {
+        grid-area: titulo;
+        margin: 10px;
     }
+    
+
     footer {
-        position: absolute;
+    
         right: 0;bottom:0;left:0;
         background-color: rgb(22, 49, 60);
     }
     nav {
         grid-area: nav;
         align-self: end;
-        margin-bottom: 5%;
+        margin-right: 10px;
+    }
+    .navColor {
+        background-color: rgb(14, 64, 83);
+        color: rgb(223, 186, 66);
+        border: none;
+    }
+
+    .navColor li {
+        
+        border-bottom: none;
+        border-left:solid 2px rgb(223, 186, 66) ;
     }
     .texto {
         grid-area: texto;
@@ -279,59 +243,11 @@ body {
     .flechaImg {
     width: 50px;
 }
-.flecha li {
-    display: block;
-}
-.flecha li:hover .menu {
-    display: none;
-}
 
-.flecha .menu {
-    display: none;
-    position: absolute;
-}
-.flecha:hover > .menu {
-    display: block;
-}
-
-    .menu{
-    list-style: none;
-    font-size:0;
-    text-align: right;
-    
-}
-
-.menu li {
-    border-left:solid 2px rgb(223, 186, 66) ;
-    background-color:rgb(14, 64, 83) ;
-    text-align: center; 
-    display: inline-block;
-    width: 120px;
-    position:relative;
-    font-size: 25px;
-}
-.subMenu {
-    position: absolute;
-    display: none;
-    
-}
 .subMenu li {
-    background-color:rgb(30, 63, 75) ;
-    border-left:none;
-    border-radius: 5px;
-    border-top:solid 2px rgb(223, 186, 66) ;
-    display: block;
-    width:100%;
-    padding: 10px;
-    text-align: left;
-}
-.menu li:hover .subMenu {
-    display: block;
-}
-
-.menu li:hover {
-    background-color:rgb(14, 39, 48) ;
-    border-radius: 5px;
+    padding: 5px;
+    border-bottom:solid 2px rgb(223, 186, 66) ;
+    border-left: none; 
 }
 
 }
