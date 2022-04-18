@@ -28,6 +28,7 @@ nav {
 }
 .imag {
     grid-area: imag; 
+    margin: 0px;
 
 }
 .publi {
@@ -36,7 +37,12 @@ nav {
 .navColor {
     background-color: rgb(14, 64, 83);
     color: rgb(223, 186, 66);
-    border: solid 2px rgb(223, 186, 66) ;
+    border-bottom: solid 2px rgb(223, 186, 66) ;
+    border-top: solid 2px rgb(223, 186, 66) ;;
+}
+.navColor1 {
+    background-color: rgb(14, 64, 83);
+    color: rgb(223, 186, 66);
 }
 
 .navColor li {
@@ -81,12 +87,12 @@ body {
 
 .card1 {
     background-color: rgb(0, 0, 0);
-    
-    height: 85%;
+    height: 400px;
     padding: 10px;
     margin: 20px;
     position: relative;
     border: solid 2px rgb(223, 186, 66) ;
+    transition: all 0.5s;
 }
 
 .card1 img {
@@ -95,6 +101,7 @@ body {
     margin: 0 auto;
     padding: 20px 20px;
     border: solid 2px grey;
+    transition: all 0.5s;
 }
 .fondoVerde { 
     background-color: green;
@@ -110,12 +117,12 @@ body {
 }
 
 .inputA {
-    height: 15px;
+    height: 30px;
     width: 150px;
     transition: height 0.5s, width 0.5s;
 }
 .inputA:hover {
-    height: 20px;
+    height: 35px;
     width: 190px;
 }
 .textAni {
@@ -126,6 +133,30 @@ body {
 .textAni:hover {
     height: 150px;
     width: 250px;
+}
+.card1 img:hover {
+    width: 200px;
+
+}
+.card1:hover  {
+    height: 550px;
+
+}
+
+.borde {
+    border: solid 2px rgb(223, 186, 66) ;  
+}
+
+.tamañoImagen {
+    margin-left: 60px ;
+    width: 300px    ;
+}
+.tabla {
+ margin: 10px;
+}
+.flexTabla {
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (min-width:1024px) {
@@ -183,16 +214,17 @@ body {
     }
     .card1 {
         background-color: rgb(0, 0, 0);
-        width: 20%;
-        height: 85%;
+        width: 300px;
+        height: 400px;
         padding: 10px;
         margin: 20px;
         position: relative;
         border: solid 2px rgb(223, 186, 66) ;
         transition: all 0.5s;
+        
     }
     
-    .card1:hover {
+    .card1:hover  {
         height: 550px;
         width: 350px;
     }
@@ -228,16 +260,11 @@ body {
     }
 
     .tabla {
-        width: 100%;
-        height: 70%;
-        margin: 1%;
+        margin: 10px;
     }
-    .borde {
-        border: solid 2px rgb(223, 186, 66) ;  
-    }
-    
     .flexTabla {
         display: flex;
+        flex-direction: row;
     }
 
     .flechaImg {
@@ -248,6 +275,12 @@ body {
     padding: 5px;
     border-bottom:solid 2px rgb(223, 186, 66) ;
     border-left: none; 
+}
+
+.tamañoImagen {
+    width: 10rem;
+    height: 14rem;
+    margin: 10px;
 }
 
 }
