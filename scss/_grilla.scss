@@ -1,0 +1,78 @@
+.grilla {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "texto"
+    "imag"
+    "publi"
+    "footer";
+    header {
+        grid-area: header;
+        
+    }
+    footer {
+        grid-area: footer;  
+            right: 0;bottom:0;left:0;
+            background-color: rgb(22, 49, 60);
+    }
+    nav {
+        grid-area: nav;
+    }
+    .texto {
+        grid-area: texto;
+        font-size: 150%;
+    }
+    .imag {
+        grid-area: imag; 
+        margin: 0px;
+    
+    }
+    .publi {
+        grid-area: publi;
+    }
+
+}
+
+
+@media screen and (min-width:1024px) {
+    
+    .grilla {
+        display: grid;
+        grid-template-areas:
+        "titulo nav nav"
+        "grilla_2 grilla_2 grilla_2";
+
+    }
+    
+    .grilla_2 {
+        grid-area: grilla_2;
+        display: grid;
+        grid-template-areas: 
+        "texto imag publi";
+    }
+    .titulo {
+        grid-area: titulo;
+        margin: 10px;
+    }
+    .texto {
+        grid-area: texto;
+    }
+    .imag {
+        grid-area: imag; 
+    }
+    .publi {
+        grid-area: publi;
+    }
+
+    footer {
+    
+        right: 0;bottom:0;left:0;
+        background-color: rgb(22, 49, 60);
+    }
+    nav {
+        grid-area: nav;
+        align-self: end;
+        margin-right: 10px;
+    }
+}

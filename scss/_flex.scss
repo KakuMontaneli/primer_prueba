@@ -1,0 +1,20 @@
+.flexLogo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.flexTabla {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width:1024px) {
+    .flexCard {
+        display: flex;
+    }
+    .flexTabla {
+        display: flex;
+        flex-direction: row;
+    }
+}

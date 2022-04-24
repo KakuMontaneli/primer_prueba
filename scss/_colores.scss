@@ -1,0 +1,64 @@
+.navColor {
+    background-color: rgb(14, 64, 83);
+    color: rgb(223, 186, 66);
+    border-bottom: solid 2px rgb(223, 186, 66) ;
+    border-top: solid 2px rgb(223, 186, 66) ;
+
+    li { 
+        border-bottom: solid 2px rgb(223, 186, 66) ;
+    }
+    
+}
+.navColor1 {
+    background-color: rgb(14, 64, 83);
+    color: rgb(223, 186, 66);
+}
+
+a {
+    color:rgb(223, 186, 66);
+    }
+
+body {
+    position: relative;
+    background-color: rgb(14, 64, 83);
+    color: rgb(223, 186, 66);
+    margin: 0;
+}
+.colorNegro {
+    background-color: rgb(6, 25, 31);
+    width: auto;
+    height: auto;
+    padding: 10px;
+
+}
+
+footer {
+        background-color: rgb(22, 49, 60);
+}
+
+.fondoVerde { 
+    background-color: green;
+    position: absolute;
+    width: 80px;  
+    top: 0;
+    right: 0;
+}
+
+.descontado {
+    color:rgb(255, 219, 100) ;
+    text-decoration: line-through;
+}
+
+.card1 {
+    background-color: rgb(0, 0, 0);
+    border: solid 2px rgb(223, 186, 66) ;
+}
+
+.borde {
+    border: solid 2px rgb(223, 186, 66) ;  
+}
+
+
+@media screen and (min-width:1024px) {
+
+}
