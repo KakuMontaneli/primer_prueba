@@ -1,27 +1,27 @@
 .navColor {
-    background-color: rgb(14, 64, 83);
-    color: rgb(223, 186, 66);
-    border-bottom: solid 2px rgb(223, 186, 66) ;
-    border-top: solid 2px rgb(223, 186, 66) ;
+    background-color: $color-background;
+    color: $color;
+    border-bottom: solid 2px #dfba42 ;
+    border-top: solid 2px $color;
 
     li { 
-        border-bottom: solid 2px rgb(223, 186, 66) ;
+        border-bottom: solid 2px $color;
     }
     
 }
 .navColor1 {
-    background-color: rgb(14, 64, 83);
-    color: rgb(223, 186, 66);
+    background-color: $color-background;
+    color: $color;
 }
 
 a {
-    color:rgb(223, 186, 66);
+    color:$color;
     }
 
 body {
     position: relative;
-    background-color: rgb(14, 64, 83);
-    color: rgb(223, 186, 66);
+    background-color: $color-background;
+    color: $color;
     margin: 0;
 }
 .colorNegro {
@@ -51,11 +51,11 @@ footer {
 
 .card1 {
     background-color: rgb(0, 0, 0);
-    border: solid 2px rgb(223, 186, 66) ;
+    border: solid 2px $color;
 }
 
 .borde {
-    border: solid 2px rgb(223, 186, 66) ;  
+    border: solid 2px $color; 
 }
 
 

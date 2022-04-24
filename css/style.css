@@ -73,7 +73,7 @@
 .navColor {
   background-color: rgb(14, 64, 83);
   color: rgb(223, 186, 66);
-  border-bottom: solid 2px rgb(223, 186, 66);
+  border-bottom: solid 2px #dfba42;
   border-top: solid 2px rgb(223, 186, 66);
 }
 .navColor li {
