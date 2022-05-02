@@ -22,6 +22,7 @@
     .texto {
         grid-area: texto;
         font-size: 150%;
+        
     }
     .imag {
         grid-area: imag; 
@@ -53,7 +54,8 @@
     }
     .titulo {
         grid-area: titulo;
-        margin: 10px;
+        margin: 1rem;
+        margin-right: 35rem;
     }
     .texto {
         grid-area: texto;
@@ -73,6 +75,5 @@
     nav {
         grid-area: nav;
         align-self: end;
-        margin-right: 10px;
     }
 }

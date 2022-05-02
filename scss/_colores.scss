@@ -25,7 +25,6 @@ body {
     margin: 0;
 }
 .colorNegro {
-    background-color: rgb(6, 25, 31);
     width: auto;
     height: auto;
     padding: 10px;
@@ -36,8 +35,7 @@ footer {
         background-color: rgb(22, 49, 60);
 }
 
-.fondoVerde { 
-    background-color: green;
+.colorVerde { 
     position: absolute;
     width: 80px;  
     top: 0;
@@ -58,6 +56,22 @@ footer {
     border: solid 2px $color; 
 }
 
+
+.bottomCancelar {
+    @extend .bottom;
+
+    &:hover {
+        background-color: rgb(169, 40, 40);
+    }
+}
+
+.bottomAceptar {
+    @extend .bottom; 
+
+    &:hover{ 
+        background-color: rgb(22, 103, 22);
+    }
+}
 
 @media screen and (min-width:1024px) {
 

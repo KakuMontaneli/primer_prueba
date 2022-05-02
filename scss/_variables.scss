@@ -1,3 +1,19 @@
 $color-background:rgb(14, 64, 83);
 $color: rgb(223, 186, 66);
 
+@mixin sizes ($widht, $height) {
+    height: $height;
+    width: $widht;
+}
+
+
+$colores: (
+    Verde:green,
+    Negro:rgb(6, 25, 31)
+);
+
+@each $color, $colorBack in $colores {
+    .color#{$color}{
+        background-color: $colorBack;
+    }
+}

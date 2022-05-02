@@ -4,7 +4,7 @@
 @import "flex";
 
 .imagenLogo {
-    width: 10%;
+    width: 3rem;
     margin-left: 10px;
 }
 
@@ -13,18 +13,18 @@
 }
 
 .imagenInicial {
-    width: 450px;
-    margin: 30px;
+    @include sizes(27rem,17rem);
+    margin: 10px;
 }
 
 .imagenHistoria {
-    width: 300px;
+    @include sizes(27rem,40rem);
     margin: 30px;
 }
 
 .tamañoImagen {
-    margin-left: 60px ;
-    width: 300px    ;
+    margin-left: 7rem;
+    @include sizes(13rem,17rem);
 }
 
 .tabla {
@@ -32,54 +32,56 @@
 }
 
 .card1 {
-    height: 400px;
-    padding: 10px;
-    margin: 20px;
+    @include sizes(27rem,30rem);
+    padding: 2rem;
+    margin: 1rem;
     position: relative;
     transition: all 0.5s;
-
-    &:hover  {
-        height: 550px;
     
-    }
-
     img {
-        width: 150px;
+        @include sizes(13rem,15rem);
         display: block;
         margin: 0 auto;
         padding: 20px 20px;
         border: solid 2px grey;
         transition: all 0.5s;
+    }
 
-        &:hover {
-            width: 200px;
-        
+    &:hover  {
+        height: 33rem;
+        img {
+            @include sizes(15rem,17rem);
+            
         }
     }
+    
 }
 
 .inputA {
-    height: 30px;
-    width: 150px;
+    @include sizes(15rem,2rem);
     transition: height 0.5s, width 0.5s;
 
     &:hover {
-        height: 35px;
-        width: 190px;
+        @include sizes(17rem,2rem);
     }
 }
 
 .textAni {
-    height: 100px;
-    width: 220px;
+    @include sizes(17rem,10rem);
     transition: height 0.5s, width 0.5s;
 
     &:hover {
-        height: 150px;
-        width: 250px;
+        @include sizes(20rem,15rem);
     }
 }
 
+.bottom {
+    @include sizes(10rem,2rem);
+    transition:all 0.5s;
+    &:hover {
+        @include sizes(12rem,3rem);
+    }
+}
 
 
 
@@ -93,32 +95,35 @@
             border-bottom: none;
             border-left:solid 2px $color ;
         }
+
+    }
+    .navEnd {
+        border-right:solid 2px $color;
     }
     .card1 {
         background-color: rgb(0, 0, 0);
-        width: 300px;
-        height: 400px;
+        @include sizes(20rem,30rem);
         padding: 10px;
         margin: 20px;
         position: relative;
         border: solid 2px $color;
         transition: all 0.5s;
 
-        &:hover  {
-            height: 550px;
-            width: 350px;
-        }
         img {
-            width: 150px;
+            @include sizes(12rem,15rem);
             display: block;
             margin: 0 auto;
             padding: 20px 20px;
             border: solid 2px grey;
             transition: all 0.5s;
+        }
 
-            &:hover {
-                width: 200px;
-        
+        &:hover  {
+            @include sizes(23rem,35rem);
+
+
+            img {
+                @include sizes(14rem,17rem);
             }
         }
         
@@ -136,9 +141,14 @@
         }
     }
 
+
+    
+    .imagenInicial {
+        @include sizes(30rem,17rem)
+    }
+
     .tamañoImagen {
-        width: 10rem;
-        height: 14rem;
+        @include sizes(10rem,14rem);
         margin: 10px;
     }
 }

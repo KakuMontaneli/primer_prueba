@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.colorVerde {
+  background-color: green;
+}
+
+.colorNegro {
+  background-color: rgb(6, 25, 31);
+}
+
 .grilla {
   display: grid;
   grid-template-areas: "header" "nav" "texto" "imag" "publi" "footer";
@@ -42,7 +50,8 @@
 
   .titulo {
     grid-area: titulo;
-    margin: 10px;
+    margin: 1rem;
+    margin-right: 35rem;
   }
 
   .texto {
@@ -67,7 +76,6 @@
   nav {
     grid-area: nav;
     align-self: end;
-    margin-right: 10px;
   }
 }
 .navColor {
@@ -97,7 +105,6 @@ body {
 }
 
 .colorNegro {
-  background-color: rgb(6, 25, 31);
   width: auto;
   height: auto;
   padding: 10px;
@@ -107,8 +114,7 @@ footer {
   background-color: rgb(22, 49, 60);
 }
 
-.fondoVerde {
-  background-color: green;
+.colorVerde {
   position: absolute;
   width: 80px;
   top: 0;
@@ -127,6 +133,14 @@ footer {
 
 .borde {
   border: solid 2px rgb(223, 186, 66);
+}
+
+.bottomCancelar:hover {
+  background-color: rgb(169, 40, 40);
+}
+
+.bottomAceptar:hover {
+  background-color: rgb(22, 103, 22);
 }
 
 .flexLogo {
@@ -150,7 +164,7 @@ footer {
   }
 }
 .imagenLogo {
-  width: 10%;
+  width: 3rem;
   margin-left: 10px;
 }
 
@@ -159,18 +173,21 @@ footer {
 }
 
 .imagenInicial {
-  width: 450px;
-  margin: 30px;
+  height: 17rem;
+  width: 27rem;
+  margin: 10px;
 }
 
 .imagenHistoria {
-  width: 300px;
+  height: 40rem;
+  width: 27rem;
   margin: 30px;
 }
 
 .tamañoImagen {
-  margin-left: 60px;
-  width: 300px;
+  margin-left: 7rem;
+  height: 17rem;
+  width: 13rem;
 }
 
 .tabla {
@@ -178,45 +195,58 @@ footer {
 }
 
 .card1 {
-  height: 400px;
-  padding: 10px;
-  margin: 20px;
+  height: 30rem;
+  width: 27rem;
+  padding: 2rem;
+  margin: 1rem;
   position: relative;
   transition: all 0.5s;
 }
-.card1:hover {
-  height: 550px;
-}
 .card1 img {
-  width: 150px;
+  height: 15rem;
+  width: 13rem;
   display: block;
   margin: 0 auto;
   padding: 20px 20px;
   border: solid 2px grey;
   transition: all 0.5s;
 }
-.card1 img:hover {
-  width: 200px;
+.card1:hover {
+  height: 33rem;
+}
+.card1:hover img {
+  height: 17rem;
+  width: 15rem;
 }
 
 .inputA {
-  height: 30px;
-  width: 150px;
+  height: 2rem;
+  width: 15rem;
   transition: height 0.5s, width 0.5s;
 }
 .inputA:hover {
-  height: 35px;
-  width: 190px;
+  height: 2rem;
+  width: 17rem;
 }
 
 .textAni {
-  height: 100px;
-  width: 220px;
+  height: 10rem;
+  width: 17rem;
   transition: height 0.5s, width 0.5s;
 }
 .textAni:hover {
-  height: 150px;
-  width: 250px;
+  height: 15rem;
+  width: 20rem;
+}
+
+.bottom, .bottomCancelar, .bottomAceptar {
+  height: 2rem;
+  width: 10rem;
+  transition: all 0.5s;
+}
+.bottom:hover, .bottomCancelar:hover, .bottomAceptar:hover {
+  height: 3rem;
+  width: 12rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -228,30 +258,36 @@ footer {
     border-left: solid 2px rgb(223, 186, 66);
   }
 
+  .navEnd {
+    border-right: solid 2px rgb(223, 186, 66);
+  }
+
   .card1 {
     background-color: rgb(0, 0, 0);
-    width: 300px;
-    height: 400px;
+    height: 30rem;
+    width: 20rem;
     padding: 10px;
     margin: 20px;
     position: relative;
     border: solid 2px rgb(223, 186, 66);
     transition: all 0.5s;
   }
-  .card1:hover {
-    height: 550px;
-    width: 350px;
-  }
   .card1 img {
-    width: 150px;
+    height: 15rem;
+    width: 12rem;
     display: block;
     margin: 0 auto;
     padding: 20px 20px;
     border: solid 2px grey;
     transition: all 0.5s;
   }
-  .card1 img:hover {
-    width: 200px;
+  .card1:hover {
+    height: 35rem;
+    width: 23rem;
+  }
+  .card1:hover img {
+    height: 17rem;
+    width: 14rem;
   }
 
   .flechaImg {
@@ -264,9 +300,14 @@ footer {
     border-left: none;
   }
 
+  .imagenInicial {
+    height: 17rem;
+    width: 30rem;
+  }
+
   .tamañoImagen {
-    width: 10rem;
     height: 14rem;
+    width: 10rem;
     margin: 10px;
   }
 }
