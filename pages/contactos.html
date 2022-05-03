@@ -18,11 +18,14 @@
         <header class="grilla">
             <section class="titulo "> 
                 <div class="flexLogo">
-                        <h1>ZJUEGOS</h1>
+            <!-- titulo/logo -->
+                    <h1>ZJUEGOS</h1>
                         <a href="../index.html"><img src="../img/png-transparent-the-legend-of-zelda-breath-of-the-wild-link-princess-zelda-decal-shield-template-glass-emblem-logo.png" alt="" class="imagenLogo"></a>
                     </div>
+            <!-- sub titulo -->
                         <h2 class="subTitulo">tu pagina sobre zelda y mas</h2>
                 </section>
+            <!-- menu -->
             <nav class="navbar navbar-expand-lg navColor">
                 
                 <div class="container-fluid"> 
@@ -41,6 +44,7 @@
                         Juegos
                         </a>
                         <ul class="dropdown-menu navColor ulBorder" aria-labelledby="navbarDropdownMenuLink">
+                <!-- sub menu -->
                             <div class="subMenu">
                                 <li class=""><a href="pages/juegos.html">juegos</a></li>
                                 <li class="subBorde"><a class="" href="../pages/skyward.html">The Legend Of Zelda: Skyward Sword</a></li>
@@ -66,53 +70,60 @@
                 </div>
             </nav>
         </header>
-        
-            <form class="colorNegro grilla_2 margen">
-                <div >
-                    <div class="">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" required placeholder="ingrese su nombre" class="inputA" >
+<!-- fin del menu -->
+
+<!-- inicio del contenido -->
+            <section>
+                <form class="colorNegro grilla_2 margen">
+                    <div >
+                        <div class="">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" required placeholder="ingrese su nombre" class="inputA" >
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" required placeholder="ingrese su apellido" class="inputA" >
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="e-mail">E-mail</label>
+                            <input type="email" id="e-mail" required placeholder="ingrese su E-mail" class="inputA" >
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="estado civil">Estado Civil</label>
+                            <select name="estado civil" id="">
+                                <option value=""diabled>seleccione una opcion</option>
+                                <option value="">soltero/a</option>
+                                <option value="">casado/a</option>
+                            </select>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="newsletter">¿Desea recibir el Newsletter?</label>
+                            <input type="checkbox" name="" id="newsletter">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="comentario" class="textAni"></textarea>
+                        </div>
+                        <div>
+                            <input type="reset" value="Limpiar formulario" class="bottom bottomCancelar">
+                            <input type="submit" value="Enviar formulario" class="bottom bottomAceptar">
+                        </div>
                     </div>
-                    <br>
-                    <br>
-                    <div>
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" required placeholder="ingrese su apellido" class="inputA" >
-                    </div>
-                    <br>
-                    <br>
-                    <div>
-                        <label for="e-mail">E-mail</label>
-                        <input type="email" id="e-mail" required placeholder="ingrese su E-mail" class="inputA" >
-                    </div>
-                    <br>
-                    <br>
-                    <div>
-                        <label for="estado civil">Estado Civil</label>
-                        <select name="estado civil" id="">
-                            <option value=""diabled>seleccione una opcion</option>
-                            <option value="">soltero/a</option>
-                            <option value="">casado/a</option>
-                        </select>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <div>
-                        <label for="newsletter">¿Desea recibir el Newsletter?</label>
-                        <input type="checkbox" name="" id="newsletter">
-                    </div>
-                    <br>
-                    <br>
-                    <div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="comentario" class="textAni"></textarea>
-                    </div>
-                    <div>
-                        <input type="reset" value="Limpiar formulario" class="bottom bottomCancelar">
-                        <input type="submit" value="Enviar formulario" class="bottom bottomAceptar">
-                    </div>
-                </div>
-            </form>
+                </form>
+            </section>
+<!-- fin del contenido -->
+
+<!-- footer -->
             <footer>
                 <h4>redes sociales y otros</h4>
                 <p>juancruzmontanelli@gmail.com</p>
