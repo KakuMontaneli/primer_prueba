@@ -22,17 +22,21 @@ body {
     position: relative;
     background-color: $color-background;
     color: $color;
-    margin: 0;
+    
 }
 .colorNegro {
     width: auto;
     height: auto;
-    padding: 10px;
+    padding: 1rem;
+    margin: 1rem;
 
 }
 
 footer {
+        padding: 1rem;
         background-color: rgb(22, 49, 60);
+        height: 15rem;
+        margin-bottom: 0px;
 }
 
 .colorVerde { 

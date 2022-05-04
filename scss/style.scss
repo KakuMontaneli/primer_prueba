@@ -12,10 +12,14 @@
     margin: 2%;
 }
 
+.padding{
+    padding: 1rem;
+}
+
 /* tamaño de imagenes */
 .imagenInicial {
-    @include sizes(27rem,17rem);
-    margin: 10px;
+    @include sizes(25rem,17rem);
+    
 }
 
 .imagenHistoria {

@@ -101,17 +101,20 @@ body {
   position: relative;
   background-color: rgb(14, 64, 83);
   color: rgb(223, 186, 66);
-  margin: 0;
 }
 
 .colorNegro {
   width: auto;
   height: auto;
-  padding: 10px;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 footer {
+  padding: 1rem;
   background-color: rgb(22, 49, 60);
+  height: 15rem;
+  margin-bottom: 0px;
 }
 
 .colorVerde {
@@ -172,10 +175,14 @@ footer {
   margin: 2%;
 }
 
+.padding {
+  padding: 1rem;
+}
+
+/* tamaño de imagenes */
 .imagenInicial {
   height: 17rem;
-  width: 27rem;
-  margin: 10px;
+  width: 25rem;
 }
 
 .imagenHistoria {
@@ -190,10 +197,12 @@ footer {
   width: 13rem;
 }
 
+/* tamaño de imagenes */
 .tabla {
   margin: 10px;
 }
 
+/* marco e imagenes de los juegos */
 .card1 {
   height: 30rem;
   width: 27rem;
@@ -219,6 +228,8 @@ footer {
   width: 15rem;
 }
 
+/*fin de marco e imagenes de los juegos */
+/* animaciones */
 .inputA {
   height: 2rem;
   width: 15rem;
@@ -250,6 +261,7 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  /* modificaciones del menu */
   .navColor {
     border: none;
   }
@@ -262,6 +274,18 @@ footer {
     border-right: solid 2px rgb(223, 186, 66);
   }
 
+  .flechaImg {
+    width: 50px;
+  }
+
+  .subMenu li {
+    padding: 5px;
+    border-bottom: solid 2px rgb(223, 186, 66);
+    border-left: none;
+  }
+
+  /* fin del menu */
+  /* marco e imagenes de los juegos */
   .card1 {
     background-color: rgb(0, 0, 0);
     height: 30rem;
@@ -290,16 +314,8 @@ footer {
     width: 14rem;
   }
 
-  .flechaImg {
-    width: 50px;
-  }
-
-  .subMenu li {
-    padding: 5px;
-    border-bottom: solid 2px rgb(223, 186, 66);
-    border-left: none;
-  }
-
+  /*fin de marco e imagenes de los juegos */
+  /* animaciones */
   .imagenInicial {
     height: 17rem;
     width: 30rem;
