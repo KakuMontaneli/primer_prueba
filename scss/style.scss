@@ -93,8 +93,28 @@
     }
 }
 
+.dropdown-item1 {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
 
-
+.subMenu {
+    a {
+        padding: 5px;
+        border-top:solid 2px $color;
+        border-left: none; 
+    }
+}
+.borderBottom {
+    border-bottom: solid 2px rgb(223, 186, 66);
+}
 
 
 @media screen and (min-width:1024px) {
@@ -115,13 +135,7 @@
         width: 50px;
     }
     
-    .subMenu {
-        li {
-            padding: 5px;
-            border-bottom:solid 2px $color;
-            border-left: none; 
-        }
-    }
+   
 /* fin del menu */
 
     /* marco e imagenes de los juegos */
