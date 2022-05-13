@@ -27,8 +27,8 @@ body {
 .colorNegro {
     width: auto;
     height: auto;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 0.5rem;
+    margin: 0.3rem;
 
 }
 
@@ -78,5 +78,11 @@ footer {
 }
 
 @media screen and (min-width:1024px) {
+    .colorNegro {
+        width: auto;
+        height: auto;
+        padding: 1rem;
+        margin: 1rem;
+    }
 
 }

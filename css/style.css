@@ -106,8 +106,8 @@ body {
 .colorNegro {
   width: auto;
   height: auto;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.5rem;
+  margin: 0.3rem;
 }
 
 footer {
@@ -146,6 +146,14 @@ footer {
   background-color: rgb(22, 103, 22);
 }
 
+@media screen and (min-width: 1024px) {
+  .colorNegro {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
 .flexLogo {
   display: flex;
   align-items: flex-end;
@@ -154,6 +162,7 @@ footer {
 .flexTabla {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -180,40 +189,50 @@ footer {
 }
 
 /* tamaño de imagenes */
-.imagenInicial {
-  height: 17rem;
-  width: 25rem;
+.imag_Contenedor {
+  height: 12rem;
+  text-align: center;
+}
+.imag_Contenedor img {
+  height: 11rem;
+  width: 14rem;
 }
 
-.imagenHistoria {
-  height: 40rem;
-  width: 27rem;
+.imag_Contenedor1 {
+  height: 20rem;
+  text-align: center;
+}
+.imag_Contenedor1 img {
+  height: 15rem;
+  width: 12rem;
   margin: 30px;
 }
 
-.tamañoImagen {
-  margin-left: 7rem;
-  height: 17rem;
-  width: 13rem;
+.imag_Contenedor2 {
+  text-align: center;
+}
+.imag_Contenedor2 img {
+  height: 14rem;
+  width: 10rem;
 }
 
 /* tamaño de imagenes */
-.tabla {
-  margin: 10px;
+/* marco e imagenes de los juegos */
+.contenedor {
+  text-align: center;
 }
 
-/* marco e imagenes de los juegos */
 .card1 {
-  height: 30rem;
-  width: 27rem;
+  height: 32rem;
+  width: 14rem;
   padding: 2rem;
   margin: 1rem;
   position: relative;
   transition: all 0.5s;
 }
 .card1 img {
-  height: 15rem;
-  width: 13rem;
+  height: 12rem;
+  width: 10rem;
   display: block;
   margin: 0 auto;
   padding: 20px 20px;
@@ -221,33 +240,33 @@ footer {
   transition: all 0.5s;
 }
 .card1:hover {
-  height: 33rem;
+  height: 34rem;
 }
 .card1:hover img {
-  height: 17rem;
-  width: 15rem;
+  height: 14rem;
+  width: 10.5rem;
 }
 
 /*fin de marco e imagenes de los juegos */
 /* animaciones */
 .inputA {
   height: 2rem;
-  width: 15rem;
+  width: 14rem;
   transition: height 0.5s, width 0.5s;
 }
 .inputA:hover {
   height: 2rem;
-  width: 17rem;
+  width: 15rem;
 }
 
 .textAni {
   height: 10rem;
-  width: 17rem;
+  width: 14rem;
   transition: height 0.5s, width 0.5s;
 }
 .textAni:hover {
   height: 15rem;
-  width: 20rem;
+  width: 15rem;
 }
 
 .bottom, .bottomCancelar, .bottomAceptar {
@@ -282,6 +301,32 @@ footer {
   border-bottom: solid 2px rgb(223, 186, 66);
 }
 
+@media screen and (min-width: 600px) {
+  .card1 {
+    height: 30rem;
+    width: 27rem;
+    padding: 2rem;
+    margin: 1rem;
+    position: relative;
+    transition: all 0.5s;
+  }
+  .card1 img {
+    height: 15rem;
+    width: 13rem;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 20px;
+    border: solid 2px grey;
+    transition: all 0.5s;
+  }
+  .card1:hover {
+    height: 33rem;
+  }
+  .card1:hover img {
+    height: 17rem;
+    width: 15rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   /* modificaciones del menu */
   .navColor {
@@ -301,6 +346,10 @@ footer {
   }
 
   /* fin del menu */
+  .tabla {
+    margin: 10px;
+  }
+
   /* marco e imagenes de los juegos */
   .card1 {
     background-color: rgb(0, 0, 0);
@@ -332,12 +381,29 @@ footer {
 
   /*fin de marco e imagenes de los juegos */
   /* animaciones */
-  .imagenInicial {
+  .imag_Contenedor {
+    height: 12rem;
+    text-align: center;
+  }
+  .imag_Contenedor img {
     height: 17rem;
     width: 30rem;
   }
 
-  .tamañoImagen {
+  .imag_Contenedor1 {
+    height: 35rem;
+    text-align: center;
+  }
+  .imag_Contenedor1 img {
+    height: 33rem;
+    width: 23rem;
+    margin: 30px;
+  }
+
+  .imag_Contenedor2 {
+    text-align: center;
+  }
+  .imag_Contenedor2 img {
     height: 14rem;
     width: 10rem;
     margin: 10px;
