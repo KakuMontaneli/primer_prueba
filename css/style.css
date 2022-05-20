@@ -38,8 +38,9 @@
 
 @media screen and (min-width: 1024px) {
   .grilla {
-    display: grid;
+    display: grid none;
     grid-template-areas: "titulo nav nav" "grilla_2 grilla_2 grilla_2";
+    justify-content: space-between;
   }
 
   .grilla_2 {
@@ -51,7 +52,49 @@
   .titulo {
     grid-area: titulo;
     margin: 1rem;
-    margin-right: 35rem;
+  }
+
+  .texto {
+    grid-area: texto;
+  }
+
+  .imag {
+    grid-area: imag;
+  }
+
+  .publi {
+    grid-area: publi;
+  }
+
+  footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(22, 49, 60);
+  }
+
+  nav {
+    grid-area: nav;
+    align-self: end;
+  }
+}
+@media screen and (min-width: 1245px) {
+  .grilla {
+    display: grid;
+    grid-template-areas: "titulo nav nav" "grilla_2 grilla_2 grilla_2";
+    justify-content: start;
+  }
+
+  .grilla_2 {
+    grid-area: grilla_2;
+    display: grid;
+    grid-template-areas: "texto imag publi";
+  }
+
+  .titulo {
+    grid-area: titulo;
+    margin: 1rem;
+    margin-right: 33rem;
   }
 
   .texto {
